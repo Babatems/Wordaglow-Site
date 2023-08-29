@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,7 +30,7 @@
                 </div>
             </div>
             <nav class="flex justify-between md:flex" id="nav-menu">
-                <ul class="flex flex-col gap-[15px] align-middle justify-center text-center md:flex md:flex-row md:items-center z-[1] bg-[#28166F] md:bg-white md:z-auto md:static absolute w-full h-[350px] left-0 md:w-auto md:h-auto md:pb-0 pt-0 pb-0 md:shadow-none md:pl-0 md:opacity-100 md:space-x-3 space-x-2 opacity-0 top-[-400px] menu-dropdown">
+                <ul class="flex flex-col gap-[15px] align-middle justify-center text-center md:flex md:flex-row md:items-center z-[40] bg-[#28166F] md:bg-white md:z-auto md:static absolute w-full h-[350px] left-0 md:w-auto md:h-auto md:pb-0 pt-0 pb-0 md:shadow-none md:pl-0 md:opacity-100 md:space-x-3 space-x-2 opacity-0 top-[-400px] menu-dropdown">
                     <li class="list-none inline-block px-5 md:px-0"><a href="#" class="no-underline text-white text-[20px] not-italic font-normal leading-normal hover:text-white duration-300 md:text-black md:text-[17px] md:font-bold" id="inter">Home</a></li>
                     <li class="list-none inline-block px-5 md:hidden"><a href="#" class="no-underline text-white text-[20px] not-italic font-normal leading-normal hover:text-white duration-300">Get to know us</a></li>
                     <li class="list-none inline-block px-5 md:px-0"><a href="#" class="no-underline text-white text-[20px] not-italic font-normal leading-normal hover:text-white duration-300 md:text-black md:text-[17px] md:font-bold">About Us</a></li>
@@ -38,7 +39,7 @@
                     <li class="list-none inline-block px-5 md:hidden md:mb-0"><a href="#" class="no-underline text-white text-[20px] not-italic font-normal leading-normal hover:text-white duration-300">Contact Us</a></li>
                     <li class="list-none inline-block px-5 md:px-0 md:mb-0"><a href="#" class="no-underline text-white text-[20px] not-italic font-normal leading-normal hover:text-white duration-300 md:text-black md:text-[17px] md:font-bold">Information Center</a></li>
                     <li class="hidden list-none px-5 mb-[22px] md:flex md:px-0 md:mb-0"><a href="#" class="no-underline text-black hover:text-white duration-300 md:text-black md:text-[17px] md:font-bold">Contact</a></li>
-                    <li class="hidden list-none md:flex px-5 mb-[22px] md:px-0 md:mb-0"><a href="#" class="no-underline text-white bg-[#28166F] hover:text-white md:px-5 md:py-[10px] duration-300">Online Giving</a></li>
+                    <li class="hidden list-none md:flex px-5 mb-[22px] md:px-0 md:mb-0"><a href="#" class="no-underline text-white bg-[#28166F] hover:text-white md:px-5 md:py-[10px] duration-300 rounded-[15px]">Online Giving</a></li>
                     
                 </ul>
             </nav>
@@ -47,23 +48,69 @@
         </div>
     </div>
 
-    
+    <!------------Intro with Slider------------->
+    <div id="default-carousel" class="relative w-full mt-0 md:mt-5" data-carousel="slide">
+        <div class="relative h-[180px] overflow-hidden md:h-screen">
+            <div class="hidden duration-700 ease-in-out image-overlay" data-carousel-item>
+                <img src="/Images/bg 1.png" alt="Image 1" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out image-overlay" data-carousel-item>
+                <img src="/Images/bg2.png" alt="Image 2" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out image-overlay" data-carousel-item>
+                <img src="/Images/bg3.png" alt="Image 3" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out image-overlay" data-carousel-item>
+                <img src="/Images/bg4.png" alt="Image 4" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out image-overlay" data-carousel-item>
+                <img src="/Images/bg5.png" alt="Image 5" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out image-overlay" data-carousel-item>
+                <img src="/Images/bg6.png" alt="Image 6" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            </div>
+        </div>
+
+        <div class="absolute z-30 flex flex-col justify-center items-center inset-0">
+            <h1 class="text-white md:text-6xl font-bold not-italic text-center" id="inter">THE   <span>REEDEMED</span>  CHRISTIAN CHURCH OF GOD</h1>
+            <p class="text-white text-[9px] font-bold md:text-[36px]">Word Aglow Parish</p>
+        </div>
+
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+        </div>
+    </div>
 
     <script>
         //Hamburger Menu
         function Menu(e) {
             let list = document.querySelector('ul');
+            let nav = document.getElementById('nav-menu');
             if (e && e.name === 'menu') {
                 e.name = 'close';
-                list.classList.remove('menu-dropdown');
                 list.classList.add('top-[105px]', 'opacity-100');
+                list.classList.remove('menu-dropdown');
+                nav.classList.add('black-background');
             } else {
                 e.name = 'menu';
+                list.classList.remove('top-[105px]', 'opacity-100');
                 list.classList.add('menu-dropdown');
-                list.classList.remove('top-[105px]', 'opacity-100'); 
+                nav.classList.remove('black-background'); 
             }
         }
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
 </body>
 
