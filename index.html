@@ -195,7 +195,7 @@
     </div>
 
     <div class="hidden md:flex md:flex-col md:px-[80px] md:mt-[60px]">
-        <h1 class="md:text-[#28166F] md:text-[32px] md:not-italic md:font-bold md:leading-normal md:text-center" id="inter">INFORMATION CENTER</h1>
+        <h1 class="md:text-[#28166F] md:text-[32px] md:not-italic md:font-bold md:leading-normal md:text-center md:mb-[26px]" id="inter">INFORMATION CENTER</h1>
         <div class="flex flex-row gap-[25px]">
             <div class="bg-black w-full h-[509px] relative">
                 <div class="absolute top-[10px] right-[5px]">
@@ -206,22 +206,30 @@
                     <img src="/Images/bible.png" alt="" class="w-[257px] h-[257px]">
                 </div>
 
-                <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-                    <p class="text-2xl font-bold">WEEKLY SERVICE</p>
-                    <p class="mb-4">
-                        Sunday: Family Worship Service (9:30am - 12:00pm)
+                <div class="absolute inset-[60px] flex flex-col justify-center items-center text-white text-center">
+                    <p class="text-[32px] not-italic leading-normal font-bold mb-[40px]">WEEKLY SERVICE</p>
+                    <p class="mb-4 text-[28px] text-center not-italic font-medium leading-normal">
+                        Sunday: 
+                        <br>
+                        Family Worship Service 
+                        <br>
+                        (9:30am - 12:00pm)
                     </p>
 
-                    <p class="mb-4">
-                        Wednesday: Bible Study (5:30pm - 7:00pm)
+                    <p class="mb-4 text-[28px] not-italic font-medium leading-normal">
+                        Wednesday: 
+                        <br>
+                        Bible Study 
+                        <br>
+                        (5:30pm - 7:00pm)
                     </p>
 
-                    <p class="mb-4">
-                        Friday: Faith Clinic (5:30pm - 7:00pm)
-                    </p>
-
-                    <p>
-                        Every Last Friday of the Month: Night of Wonders (10:00pm - 1:00am)
+                    <p class="text-[28px] not-italic font-medium leading-normal">
+                        Friday:
+                        <br>
+                        Faith Clinic 
+                        <br>
+                        (5:30pm - 7:00pm)
                     </p>
                 </div>
             </div>
@@ -231,6 +239,88 @@
             </div>
         </div>
     </div>
+
+    <!--------Daily----------->
+    <div class="flex flex-col gap-[20px] md:gap-0 md:flex-row justify-center md:justify-around mt-[30px]">
+        <div class="flex justify-center">
+            <button data-modal-target="prayer-modal" data-modal-toggle="prayer-modal" class="block md:w-full w-[194px] text-[#28166F] bg-white hover:bg-[#28166F] hover:text-[white] ring-2 ring-[#28166F] font-medium rounded-lg text-sm px-4 py-2.5 text-center duration-300" type="button">
+                Prayer Point of the Day
+            </button>
+            <div id="prayer-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-md max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
+                                Prayer Point of the Day 
+                            </h3>
+                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="prayer-modal">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-1">
+                            <p class="flex justify-center text-sm text-white">(Day 244/365)</p>
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-white">
+                                Heavenly Father, give me courage and insight,
+                                To identify the stumbling blocks in my life,
+                                Grant me the resolve to remove them completely,
+                                Help me prioritize my eternal well-being,
+                                And guide me on the path to abundant life.
+                            </p>                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button data-modal-target="bible-modal" data-modal-toggle="bible-modal" class="block md:w-full w-[194px] text-[#28166F] bg-white hover:bg-[#28166F] hover:text-[white] ring-2 ring-[#28166F] font-medium rounded-lg text-sm px-5 py-2.5 text-center duration-300" type="button">
+                Daily Bible Verse
+            </button>
+            <div id="bible-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-md max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
+                                Bible Verse of the Day  
+                            </h3>
+                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="bible-modal">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-1">
+                            <p class="flex justify-center text-sm text-white">(Day 244/365)</p>
+                            <p class="text-lg dark:text-white">Matthew 18 vs 8 : King James Version </p>
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-white">
+                                Wherefore if thy hand or thy foot offend thee, cut them off, and cast them from thee: it is better for thee to enter into life halt or maimed, rather than having two hands or two feet to be cast into everlasting fire.
+                            </p>                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------Contact Us----->
+    <div></div>
+
+    <!-------Footer-------->
+    <footer>
+        
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">RCCG Word Aglow Parish</a>. All Rights Reserved.</span>
+    </footer>
 
     <script>
         //Hamburger Menu
